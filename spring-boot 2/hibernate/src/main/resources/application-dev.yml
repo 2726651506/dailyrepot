@@ -1,0 +1,36 @@
+spring:
+  datasource:
+<<<<<<< HEAD
+    name: account_student
+    url: jdbc:mysql://127.0.0.1:3306/account_student?autoReconnect=true&useUnicode=yes&useSSL=false&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+=======
+    name: hibernate
+    url: jdbc:mysql://example.com:3306/hibernate?autoReconnect=true&useUnicode=yes&useSSL=false&characterEncoding=UTF-8
+    username: valord577
+    password: valord577
+>>>>>>> 714f340e5a6dce2401f437a3c6343e56198e9e4d
+    sql-script-encoding: UTF-8
+    platform: mysql
+    continue-on-error: false
+    separator: //
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    dbcp2:
+      max-open-prepared-statements: 20
+      pool-prepared-statements: true
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+      validation-query: select 'x'
+      soft-min-evictable-idle-time-millis: 300000
+      time-between-eviction-runs-millis: 60000
+      min-idle: 10
+      max-idle: 10
+      initial-size: 15
+      max-total: 100
+  jpa:
+    show-sql: true
+
+server:
+  port: 20012
